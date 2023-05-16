@@ -1,0 +1,105 @@
+.skeleton {
+  width: 100%;
+  padding: 24px 40px 32px 24px;
+  border: 1px solid var(--rare-border-color);
+  border-radius: 8px;
+}
+
+.skeleton--component {
+  max-width: 600px;
+}
+
+.skeleton--preview {
+  max-width: 600px;
+  pointer-events: none;
+}
+
+@media (max-width: 400px) {
+  .skeleton--preview {
+    padding: 12px 20px 16px 12px;
+  }
+}
+
+.skeleton__line {
+  height: 20px;
+}
+
+
+@media (max-width: 400px) {
+  .skeleton--preview .skeleton__line {
+    height: 10px;
+  }
+}
+
+.skeleton__inner {
+  width: 66%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 400px) {
+  .skeleton--preview .skeleton__inner {
+    margin-bottom: 12px;
+  }
+}
+
+.skeleton__avatar {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  margin-right: 16px;
+  border-radius: 50%;
+  background-color: var(--grey-2);
+  background-image: var(--grey-gradient);
+}
+
+.skeleton__line,
+.skeleton__avatar {
+  background-color: var(--grey-2);
+  background-image: var(--grey-gradient);
+  background-size: 200%;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: gradient;
+  animation-timing-function: linear;
+}
+
+@keyframes gradient {
+  to {
+      background-position: 200%;
+  }
+}
+
+@media (max-width: 400px) {
+  .skeleton--preview .skeleton__avatar {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    background-color: var(--grey-2);
+    border-radius: 50%;
+  }
+}
+  
+.skeleton__info {
+  width: 77%;
+}
+
+.skeleton__line--name {
+  width: 67%;
+  margin-bottom: 8px;
+}
+
+.skeleton__line--subname {
+  width: 100%;
+}
+
+.skeleton__line--text {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.skeleton__line--text:last-child {
+  margin-bottom: 0;
+}

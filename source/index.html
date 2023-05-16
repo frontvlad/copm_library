@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html class="page" lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body class="content" data-main-page>
+
+  <header class="header">
+    <div class="container">
+      <button class="header__toggler-mobile-menu">
+        <span class="header__toggler-mobile-menu-icon"></span>
+      </button>
+      <div class="header__wrapper">
+        <svg class="header__icon">
+          <use href="./assets/icons/sprite.svg#header-icon">
+        </svg>
+        <div class="header__theme">
+          <svg class="header__theme-icon header__theme-icon--sun">
+            <use href="./img/sprite.svg#sun-icon">
+          </svg>
+          <label class="toggler toggler--theme">
+            <input class="toggler__input visually-hidden js-theme" type="checkbox" name="theme-header">
+            <span class="toggler__label"><span class="visually-hidden">Dark mode</span></span>
+          </label>
+          <svg class="header__theme-icon header__theme-icon--moon">
+            <use href="./img/sprite.svg#moon-icon">
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <nav class="context-menu">
+      <div class="context-menu__block">
+        <div class="context-menu__theme-toggler theme-toggler">
+          <p class="theme-toggler__text">Dark mode</p>
+          <label class="toggler toggler--theme">
+            <input class="toggler__input visually-hidden js-theme" type="checkbox" id="theme-changer" name="theme-menu">
+            <span class="toggler__label"><span class="visually-hidden">Dark mode</span></span>
+          </label>
+        </div>
+      </div>
+      <div class="context-menu__block">
+        <p class="context-menu__title">Complex</p>
+        <ul class="context-menu__list">
+          <li class="context-menu__item">
+            <a href="./pages/button.html" class="context-menu__link">Button</a>
+          </li>
+          <li class="context-menu__item">
+            <a href="./pages/tooltip.html" class="context-menu__link">Tooltip</a>
+          </li>
+          <li class="context-menu__item">
+            <a href="./pages/avatar.html" class="context-menu__link">Avatar</a>
+          </li>
+          <li class="context-menu__item">
+            <a href="./pages/form-elements.html" class="context-menu__link">Custom form elements</a>
+          </li>
+        </ul>
+      </div>
+      <div class="context-menu__block">
+        <p class="context-menu__title">Simple</p>
+        <ul class="context-menu__list">
+          <li class="context-menu__item">
+            <a href="./pages/skeleton.html" class="context-menu__link">Skeleton</a>
+          </li>
+          <li class="context-menu__item">
+            <a href="./pages/histogram.html" class="context-menu__link">Histogram</a>
+          </li>
+          <li class="context-menu__item">
+            <a href="./pages/calendar.html" class="context-menu__link">Calendar</a>
+          </li>
+          <li class="context-menu__item">
+            <a href="./pages/accordion.html" class="context-menu__link">Accordion</a>
+          </li>
+          <li class="context-menu__item">
+            <a href="./pages/modal.html" class="context-menu__link">Modal</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h1 class="title">
+      <div class="container">
+      Reusable component library
+      </div>
+    </h1>
+    <div class="tabs">
+      <div class="tabs__scroller">
+        <div class="container">
+          <ul class="tabs__list">
+            <li class="tabs__item">
+              <button class="tabs__button tabs__button--active" data-type-all>All components</button>
+            </li>
+            <li class="tabs__item">
+              <button class="tabs__button" data-type-complex>Complex</button>
+            </li>
+            <li class="tabs__item">
+              <button class="tabs__button" data-type-simple>Simple</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="tabs__content">
+        <section class="preview">
+          <div class="container">
+            <div class="preview__inner">
+
+              <div class="preview__card card" data-type-simple>
+                <a href="./pages/skeleton.html" class="card__link">
+                  <div class="card__component">
+                    <div class="skeleton skeleton--preview">
+                      <div class="skeleton__inner">
+                        <div class="skeleton__avatar">
+                        </div>
+                        <div class="skeleton__info">
+                          <div class="skeleton__line skeleton__line--name"></div>
+                          <div class="skeleton__line skeleton__line--subname"></div>
+                        </div>
+                      </div>
+                      <div class="skeleton__line skeleton__line--text"></div>
+                      <div class="skeleton__line skeleton__line--text"></div>
+                    </div>
+                  </div>
+                  <p class="card__title">Skeleton</p>
+                  <p class="card__subtitle">Container</p>
+                </a>
+              </div>
+
+              <div class="preview__card card" data-type-simple>
+                <a href="./pages/modal.html" class="card__link">
+                  <div class="card__component">
+                    <div class="modal modal--preview">
+                      <div class="modal__window">
+                        <h3 class="modal__title">
+                          Modal title
+                        </h3>
+                        <p class="modal__text">
+                          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+                          velit
+                        </p>
+                        <button class="modal__close"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="card__title">Modal</p>
+                  <p class="card__subtitle">Container</p>
+                </a>
+              </div>
+
+              <div class="preview__card card" data-type-complex>
+                <a href="./pages/button.html" class="card__link">
+                  <div class="card__component">
+                    <button class="button button--primary button--preview">Кнопка</button>
+                  </div>
+                  <p class="card__title">Button</p>
+                  <p class="card__subtitle">Container</p>
+                </a>
+              </div>
+
+              <div class="preview__card card"  data-type-complex>
+                <a href="./pages/tooltip.html" class="card__link">
+                  <div class="card__component card__component--tooltip">
+                    <div class="tooltip tooltip--previev">
+                      <svg class="tooltip__icon">
+                        <use href="./assets/icons/sprite.svg#tooltip-icon">
+                      </svg>
+                      <div class="tooltip__bubble">
+                        Helper Text
+                      </div>
+                    </div>
+                  </div>
+                  <p class="card__title">Tooltip</p>
+                  <p class="card__subtitle">Container</p>
+                </a>
+              </div>
+
+              <div class="preview__card card" data-type-simple>
+                <a href="./pages/accordion.html" class="card__link">
+                  <div class="card__component">
+                    <div class="accordion accordion--preview">
+                      <details class="accordion__item">
+                        <summary class="accordion__title">
+                          Accordion item 1
+                        </summary>
+                        <p class="accordion__text">
+                          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                          consequat
+                          duis
+                          enim
+                          velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                      </details>
+                    </div>
+                  </div>
+                  <p class="card__title">Accordion</p>
+                  <p class="card__subtitle">Container</p>
+                </a>
+              </div>
+
+              <div class="preview__card card" data-type-simple>
+                <a href="./pages/histogram.html" class="card__link">
+                  <div class="card__component">
+                    <div class="histogram histogram--preview">
+                      <div class="histogram__inner">
+                        <div class="histogram__orders">
+                          <p class="histogram__orders-title">Total orders</p>
+                          <p class="histogram__number">50254</p>
+                        </div>
+                        <span class="histogram__link" href="#">View all</span>
+                      </div>
+                      <div class="histogram__schedule">
+                        <div class="histogram__schedule-item" style="height: 66%"></div>
+                        <div class="histogram__schedule-item" style="height: 100%"></div>
+                        <div class="histogram__schedule-item" style="height: 30%"></div>
+                        <div class="histogram__schedule-item" style="height: 50%"></div>
+                        <div class="histogram__schedule-item" style="height: 90%"></div>
+                        <div class="histogram__schedule-item" style="height: 15%"></div>
+                        <div class="histogram__schedule-item" style="height: 66%"></div>
+                        <div class="histogram__schedule-item" style="height: 100%"></div>
+                        <div class="histogram__schedule-item" style="height: 30%"></div>
+                        <div class="histogram__schedule-item" style="height: 50%"></div>
+                        <div class="histogram__schedule-item" style="height: 90%"></div>
+                        <div class="histogram__schedule-item" style="height: 15%"></div>
+                        <div class="histogram__schedule-item" style="height: 66%"></div>
+                        <div class="histogram__schedule-item" style="height: 100%"></div>
+                        <div class="histogram__schedule-item" style="height: 30%"></div>
+                        <div class="histogram__schedule-item" style="height: 50%"></div>
+                        <div class="histogram__schedule-item" style="height: 90%"></div>
+                        <div class="histogram__schedule-item" style="height: 15%"></div>
+                        <div class="histogram__schedule-item" style="height: 66%"></div>
+                        <div class="histogram__schedule-item" style="height: 100%"></div>
+                        <div class="histogram__schedule-item" style="height: 30%"></div>
+                        <div class="histogram__schedule-item" style="height: 50%"></div>
+                        <div class="histogram__schedule-item" style="height: 90%"></div>
+                        <div class="histogram__schedule-item" style="height: 15%"></div>
+                        <div class="histogram__schedule-item" style="height: 66%"></div>
+                        <div class="histogram__schedule-item" style="height: 100%"></div>
+                        <div class="histogram__schedule-item" style="height: 30%"></div>
+                        <div class="histogram__schedule-item" style="height: 50%"></div>
+                        <div class="histogram__schedule-item" style="height: 90%"></div>
+                        <div class="histogram__schedule-item" style="height: 15%"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="card__title">Histogram</p>
+                  <p class="card__subtitle">Container</p>
+                </a>
+              </div>
+
+              <div class="preview__card card" data-type-complex>
+                <a href="./pages/avatar.html" class="card__link">
+                  <div class="card__component">
+                    <div class="avatar avatar--previev">
+                      <img class="avatar__img" src="../img/avatar.jpg" alt="Аватар пользователя">
+                    </div>
+                  </div>
+                  <p class="card__title">Avatar</p>
+                  <p class="card__subtitle">Element</p>
+                </a>
+              </div>
+
+              <div class="preview__card card" data-type-simple>
+                <a href="./pages/calendar.html" class="card__link">
+                  <div class="card__component">
+                    <div class="calendar calendar--previev">
+                      <div class="calendar__title">October 2019</div>
+                      <div class="calendar__wrapper">
+                        <div class="clendar__inner">
+                          <div class="calendar__item calendar__item--day">Mon</div>
+                          <div class="calendar__item calendar__item--day">Tue</div>
+                          <div class="calendar__item calendar__item--day">Wed</div>
+                          <div class="calendar__item calendar__item--day">Thu</div>
+                          <div class="calendar__item calendar__item--day">Fri</div>
+                          <div class="calendar__item calendar__item--day">Sat</div>
+                          <div class="calendar__item calendar__item--day">Sun</div>
+                          <div class="calendar__item"></div>
+                          <div class="calendar__item"></div>
+                          <div class="calendar__item"></div>
+                          <div class="calendar__item"></div>
+                          <div class="calendar__item">1</div>
+                          <div class="calendar__item">2</div>
+                          <div class="calendar__item">3</div>
+                          <div class="calendar__item">4</div>
+                          <div class="calendar__item">5</div>
+                          <div class="calendar__item">6</div>
+                          <div class="calendar__item">7</div>
+                          <div class="calendar__item">8</div>
+                          <div class="calendar__item">9</div>
+                          <div class="calendar__item">10</div>
+                          <div class="calendar__item">11</div>
+                          <div class="calendar__item">12</div>
+                          <div class="calendar__item">13</div>
+                          <div class="calendar__item">14</div>
+                          <div class="calendar__item">15</div>
+                          <div class="calendar__item">16</div>
+                          <div class="calendar__item">17</div>
+                          <div class="calendar__item calendar__item--target">18</div>
+                          <div class="calendar__item calendar__item--interval">19</div>
+                          <div class="calendar__item calendar__item--interval">20</div>
+                          <div class="calendar__item calendar__item--interval">21</div>
+                          <div class="calendar__item calendar__item--interval">22</div>
+                          <div class="calendar__item calendar__item--target">23</div>
+                          <div class="calendar__item">24</div>
+                          <div class="calendar__item">25</div>
+                          <div class="calendar__item">26</div>
+                          <div class="calendar__item">27</div>
+                          <div class="calendar__item">28</div>
+                          <div class="calendar__item">29</div>
+                          <div class="calendar__item">30</div>
+                          <div class="calendar__item">31</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="card__title">Calendar</p>
+                  <p class="card__subtitle">Container</p>
+                </a>
+              </div>
+
+              <div class="preview__card card" data-type-complex>
+                <a href="./pages/form-elements.html" class="card__link">
+                  <div class="card__component card__component--form">
+                    <div class="card__form-inner">
+                      <label class="checkbox">
+                        <input class="checkbox__input visually-hidden" type="checkbox" name="checkbox-1">
+                        <span class="checkbox__label">Default</span>
+                      </label>
+                      <label class="radio">
+                        <input class="radio__input visually-hidden" type="radio" name="radio-1" value="Default">
+                        <span class="radio__label">Default</span>
+                      </label>
+                      <label class="toggler">
+                        <input class="toggler__input visually-hidden" type="checkbox" name="toggler-1">
+                        <span class="toggler__label">Off</span>
+                      </label>
+                    </div>
+                    <div class="card__form-inner">
+                      <label class="checkbox">
+                        <input class="checkbox__input visually-hidden" type="checkbox" name="checkbox-1" checked>
+                        <span class="checkbox__label">Checked</span>
+                      </label>
+                      <label class="radio">
+                        <input class="radio__input visually-hidden" type="radio" name="radio-1" value="Checked" checked>
+                        <span class="radio__label">Checked</span>
+                      </label>
+                      <label class="toggler">
+                        <input class="toggler__input visually-hidden" type="checkbox" name="toggler-1" checked>
+                        <span class="toggler__label">On</span>
+                      </label>
+                    </div>
+                  </div>
+                  <p class="card__title">Custom form elements</p>
+                  <p class="card__subtitle">Container</p>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <h2 class="footer__title">
+        About
+      </h2>
+      <p class="footer__text">
+        This project is a collection of professionally designed, pre-built, fully responsive HTML snippets you can drop
+        into your projects. Get started by checking out our free preview components, or browsing the PNG previews in the
+        categories you're most curious about.
+      </p>
+    </div>
+  </footer>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

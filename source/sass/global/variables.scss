@@ -1,0 +1,100 @@
+:root {
+  --white: #ffffff;
+  --black: #212429;
+  --pink: #F784AD;
+  --purple: #7048E8;
+  --purple-1: #5028C6;
+  --blue: #4263EB;
+  --blue-1: #2342C0;
+  --blue-2: #334D6E;
+  --blue-3: rgba(160, 177, 245, 0.2);
+  --red: #F03D3E;
+  --grey-1: #F8F9FA;
+  --grey-2: #DDE2E5;
+  --grey-3: #ACB5BD;
+  --grey-4: #495057;
+  --grey-7: #191b1e;
+  --grey-5: #90A0B7;
+  --grey-6: #F9FAFC;
+
+  --box-shadow: rgba(33, 36, 41, 0.05);
+  --box-shadow-1: rgba(240, 61, 62, 0.1);
+  --box-shadow-2: rgba(51, 154, 240, 0.1);
+
+  --grey-gradient: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+
+  --error: var(--red);
+  --success: var(--blue);
+
+  --primary: var(--blue);
+  --primary-hover: var(--blue-1);
+
+  --secondary: var(--purple);
+  --secondary-hover: var(--purple-1);
+
+  --theme-togler-sun: var(--black);
+  --theme-togler-moon: var(--grey-3);
+
+  --main-bg: var(--white);
+  --main-components-bg: var(--grey-6);
+  --secondary-bg: var(--grey-6);
+  --card-bg: var(--white);
+
+  --main-text-color: var(--black);
+  --secondary-text-color: var(--grey-3);
+
+  --main-tabs-color: var(--grey-3);
+  --active-tabs-color: var(--black);
+
+  --main-border-color: var(--black);
+  --secondary-border-color: var(--grey-2);
+  --rare-border-color: var(--grey-3);
+
+
+  --calendar-text-color: var(--blue-2);
+  --calebdar-interval-text-color: var(--blue-2);
+  --calebdar-interval-bg:  var(--blue-3);
+
+  --menu-toggler-color: var(--grey-4);
+  --active-menu-toggler-color: var(--black);
+
+  --button-text-color: var(--white);
+
+  --input-text-color: var(--grey-4);
+  --input-placeholder-text-color: var(--grey-2);
+
+  --radio-text-color: var(--grey-4)
+
+}
+
+html[data-theme-dark] {
+  --theme-togler-sun: var(--grey-3);
+  --theme-togler-moon: var(--grey-1);
+
+  --main-bg: var(--black);
+  --main-components-bg: var(--grey-4);
+  --secondary-bg: var(--grey-4);
+  --card-bg: var(--black);
+
+  --main-text-color: var(--grey-3);
+  --secondary-text-color: var(--grey-2);
+
+  --main-tabs-color: var(--grey-3);
+  --active-tabs-color: var(--grey-1);
+
+  --main-border-color: var(--grey-3);
+  --secondary-border-color: var(--grey-1);
+  --rare-border-color: var(--grey-1);
+
+  --calendar-text-color: var(--grey-3);
+  --calebdar-interval-text-color: var(--white);
+  --calebdar-interval-bg:  var(--blue-2);
+
+  --menu-toggler-color: var(--grey-3);
+  --active-menu-toggler-color: var(--white);
+
+  --input-text-color: var(--grey-2);
+  --input-placeholder-text-color: var(--grey-1);
+
+  --radio-text-color: var(--white);
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.min.css">
+  <title>Modal</title>
+</head>
+
+<body class="content" data-components-page>
+  <header class="header header--component">
+    <div class="container">
+      <button class="header__toggler-mobile-menu">
+        <span class="header__toggler-mobile-menu-icon"></span>
+      </button>
+      <div class="header__wrapper">
+        <a class="header__icon" href="../index.html">
+          <svg class="header__img">
+            <use href="../assets/icons/sprite.svg#header-icon">
+          </svg>
+        </a>
+        <div class="header__theme">
+          <svg class="header__theme-icon header__theme-icon--sun">
+            <use href="../assets/icons/sprite.svg#sun-icon">
+          </svg>
+          <label class="toggler toggler--theme">
+            <input class="toggler__input visually-hidden js-theme" type="checkbox" name="theme-header">
+            <span class="toggler__label"><span class="visually-hidden">Dark mode</span></span>
+          </label>
+          <svg class="header__theme-icon header__theme-icon--moon">
+            <use href="../assets/icons/sprite.svg#moon-icon">
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main-content">
+    <section class="components">
+      <div class="components__container container">
+        <div class="components__inner">
+          <nav class="context-menu context-menu--components">
+            <div class="context-menu__block">
+              <div class="context-menu__theme-toggler theme-toggler">
+                <p class="theme-toggler__text">Dark mode</p>
+                <label class="toggler toggler--theme">
+                  <input class="toggler__input visually-hidden js-theme" type="checkbox" name="not">
+                  <span class="toggler__label"><span class="visually-hidden">Dark mode</span></span>
+                </label>
+              </div>
+            </div>
+            <div class="context-menu__block">
+              <p class="context-menu__title">Complex</p>
+              <ul class="context-menu__list">
+                <li class="context-menu__item">
+                  <a href="./button.html" class="context-menu__link">Button</a>
+                </li>
+                <li class="context-menu__item">
+                  <a href="./tooltip.html" class="context-menu__link">Tooltip</a>
+                </li>
+                <li class="context-menu__item">
+                  <a href="./avatar.html" class="context-menu__link">Avatar</a>
+                </li>
+                <li class="context-menu__item">
+                  <a href="./form-elements.html" class="context-menu__link">Custom form elements</a>
+                </li>
+              </ul>
+            </div>
+            <div class="context-menu__block">
+              <p class="context-menu__title">Simple</p>
+              <ul class="context-menu__list">
+                <li class="context-menu__item">
+                  <a href="./skeleton.html" class="context-menu__link">Skeleton</a>
+                </li>
+                <li class="context-menu__item">
+                  <a href="./histogram.html" class="context-menu__link">Histogram</a>
+                </li>
+                <li class="context-menu__item">
+                  <a href="./calendar.html" class="context-menu__link">Calendar</a>
+                </li>
+                <li class="context-menu__item">
+                  <a href="./accordion.html" class="context-menu__link">Accordion</a>
+                </li>
+                <li class="context-menu__item">
+                  <a href="./modal.html" class="context-menu__link context-menu__link--active">Modal</a>
+                </li>
+                <li class="context-menu__item context-menu__item--main-page">
+                  <a href="../index.html" class="context-menu__link">Main page</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="components__block">
+            <h2 class="components__title">Modal</h2>
+            <div class="components__element">
+              <button class="button button--primary js-button">
+                Open modal
+              </button>
+              <div class="modal">
+                <div class="modal__window">
+                  <h3 class="modal__title">
+                    Modal title
+                  </h3>
+                  <p class="modal__text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+                    velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+                    velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </p>
+                  <button class="modal__close"></button>
+                </div>
+              </div>
+            </div>
+            <div class="components__code">
+              <div class="tabs">
+
+                <div class="tabs__scroller">
+                  <div class="container">
+                    <ul class="tabs__list tabs__list--components">
+                      <li class="tabs__item">
+                        <button class="tabs__button tabs__button--active" data-type-html>HTML</button>
+                      </li>
+                      <li class="tabs__item">
+                        <button class="tabs__button" data-type-css>CSS</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="tabs__content tabs__content--html">
+                  <pre class="components__code-example">
+                    <code data-simplebar class="prettyprint">
+&lt;div class="modal"&gt;
+  &lt;div class="modal__window"&gt;
+    &lt;h3 class="modal__title"&gt;
+      Modal title
+    &lt;/h3&gt;
+    &lt;p class="modal__text"&gt;
+     Text
+    &lt;/p&gt;
+    &lt;button class="modal__close"&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+                <div class="tabs__content tabs__content--css">
+                  <pre class="components__code-example">
+                    <code data-simplebar class="prettyprint">
+.modal {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(196, 196, 196, 0.5);
+}
+
+.modal__open {
+  width: auto;
+}
+
+.modal__window {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  position: relative;
+  width: 100%;
+  max-width: 428px;
+  padding: 30px 40px;
+  border-radius: 8px;
+  background-color: var(--white);
+  overflow: auto;
+}
+
+.modal__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--blue-2);
+  margin-bottom: 14px;
+}
+
+.modal__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-4);
+}
+
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 9px;
+  height: 9px;
+  background-image: url("./img/Group.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+                    </code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer-components">
+    <div class="container">
+      <p class="footer-components__title">
+        Reusable component library
+      </p>
+    </div>
+  </footer>
+  <script type="module" src="../js/main.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.8/simplebar.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</body>
+
+</html>

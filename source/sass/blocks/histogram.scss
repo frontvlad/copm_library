@@ -1,0 +1,120 @@
+.histogram {
+  width: 100%;
+  padding: 16px 24px 24px;
+  border: 1px solid var(--rare-border-color);
+  border-radius: 8px;
+}
+
+.histogram--preview {
+  max-width: 600px;
+  pointer-events: none;
+}
+
+.histogram--component {
+  max-width: 500px;
+}
+
+@media (max-width: 400px) {
+  .histogram--preview {
+    padding: 8px 12px 12px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+.histogram__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 46px;
+}
+
+@media (max-width: 400px) {
+  .histogram--preview .histogram__inner {
+    margin-bottom: 15px;
+  }
+}
+
+.histogram__orders {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: var(--main-text-color);
+}
+
+.histogram__orders-title {
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.8;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 400px) {
+  .histogram--preview .histogram__orders-title {
+    font-size: 8px;
+    line-height: 12px;
+    opacity: 0.8;
+    margin-bottom: 6px;
+  }
+}
+
+.histogram__number {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+
+@media (max-width: 400px) {
+  .histogram--preview .histogram__number {
+    font-size: 10px;
+    line-height: 13px;
+  }
+}
+
+.histogram__link {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--blue);
+}
+
+@media (max-width: 400px) {
+  .histogram--preview .histogram__link {
+    font-size: 8px;
+    line-height: 12px;
+  }
+}
+
+.histogram__schedule {
+  display: flex;
+  align-items: flex-end;
+  gap: 1px;
+  height: 50px;
+  animation-name: histogram-move;
+  animation-duration: 0.6s;
+}
+
+@keyframes histogram-move {
+  from {
+      transform: scaleY(0);
+      transform-origin: bottom center;
+  }
+  to {
+      transform: scaleY(1);
+      transform-origin: bottom center;
+  }
+}
+
+@media (max-width: 400px) {
+  .histogram--preview .histogram__schedule {
+    height: 25px;
+  }
+}
+
+.histogram__schedule-item {
+  flex: auto;
+  background-color: var(--blue);
+}
+

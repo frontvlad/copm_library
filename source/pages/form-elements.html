@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.min.css">
+  <title>Form elements</title>
+</head>
+
+<body class="content" data-components-page>
+  <header class="header header--component">
+    <div class="container">
+      <button class="header__toggler-mobile-menu">
+        <span class="header__toggler-mobile-menu-icon"></span>
+      </button>
+      <div class="header__wrapper">
+        <a class="header__icon" href="../index.html">
+          <svg class="header__img">
+            <use href="../assets/icons/sprite.svg#header-icon">
+          </svg>
+        </a>
+        <div class="header__theme">
+          <svg class="header__theme-icon header__theme-icon--sun">
+            <use href="../assets/icons/sprite.svg#sun-icon">
+          </svg>
+          <label class="toggler toggler--theme">
+            <input class="toggler__input visually-hidden js-theme" type="checkbox" name="theme-header">
+            <span class="toggler__label"><span class="visually-hidden">Dark mode</span></span>
+          </label>
+          <svg class="header__theme-icon header__theme-icon--moon">
+            <use href="../assets/icons/sprite.svg#moon-icon">
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main-content">
+    <section class="components">
+      <div class="components__container container">
+        <div class="components__inner">
+          <nav class="context-menu context-menu--components">
+            <div class="context-menu__block">
+              <div class="context-menu__theme-toggler theme-toggler">
+                <p class="theme-toggler__text">Dark mode</p>
+                <label class="toggler toggler--theme">
+                  <input class="toggler__input visually-hidden js-theme" type="checkbox" name="not">
+                  <span class="toggler__label"><span class="visually-hidden">Dark mode</span></span>
+                </label>
+              </div>
+            </div>
+            <div class="context-menu__block">
+              <p class="context-menu__title">Complex</p>
+              <ul class="context-menu__list">
+                <li class="context-menu__item">
+                  <a href="./button.html" class="context-menu__link">Button</a>
+                </li>
+                <li class="context-menu__item">
+                  <a href="./tooltip.html" class="context-menu__link">Tooltip</a>
+                </li>
+                <li class="context-menu__item">
+                  <a href="./avatar.html" class="context-menu__link">Avatar</a>
+                </li>
+                <li class="context-menu__item">
+                  <a href="./form-elements.html" class="context-menu__link context-menu__link--active">Custom form elements</a>
+                </li>
+              </ul>
+            </div>
+            <div class="context-menu__block">
+              <p class="context-menu__title">Simple</p>
+              <ul class="context-menu__list">
+                <li class="context-menu__item">
+                  <a href="./skeleton.html" class="context-menu__link">Skeleton</a>
+                </li>
+                <li class="context-menu__item">
+                  <a href="./histogram.html" class="context-menu__link">Histogram</a>
+                </li>
+                <li class="context-menu__item">
+                  <a href="./calendar.html" class="context-menu__link">Calendar</a>
+                </li>
+                <li class="context-menu__item">
+                  <a href="./accordion.html" class="context-menu__link">Accordion</a>
+                </li>
+                <li class="context-menu__item">
+                  <a href="./modal.html" class="context-menu__link">Modal</a>
+                </li>
+                <li class="context-menu__item context-menu__item--main-page">
+                  <a href="../index.html" class="context-menu__link">Main page</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="components__block">
+            <h2 class="components__title">Form elements</h2>
+            <div class="components__element">
+              <div class="components__form-toggler">
+                <div class="components__form-inner">
+                  <label class="radio">
+                    <input class="radio__input visually-hidden" type="radio" name="not" value="Default">
+                    <span class="radio__label">Default</span>
+                  </label>
+                  <label class="radio">
+                    <input class="radio__input visually-hidden" type="radio" name="not" value="Checked" checked>
+                    <span class="radio__label">Checked</span>
+                  </label>
+                  <label class="radio">
+                    <input class="radio__input visually-hidden" type="radio" name="not" value="Disabled" disabled>
+                    <span class="radio__label">Disabled</span>
+                  </label>
+                </div>
+                <div class="components__form-inner">
+                  <label class="checkbox">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="not">
+                    <span class="checkbox__label">Default</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="not" checked>
+                    <span class="checkbox__label">Checked</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="not" disabled>
+                    <span class="checkbox__label">Disabled</span>
+                  </label>
+                </div>
+                <div class="components__form-inner">
+                  <label class="toggler">
+                    <input class="toggler__input visually-hidden" type="checkbox" name="not">
+                    <span class="toggler__label">Off</span>
+                  </label>
+                  <label class="toggler">
+                    <input class="toggler__input visually-hidden" type="checkbox" name="not" checked>
+                    <span class="toggler__label">On</span>
+                  </label>
+                  <label class="toggler">
+                    <input class="toggler__input visually-hidden" type="checkbox" name="not" disabled>
+                    <span class="toggler__label">Disabled</span>
+                  </label>
+                </div>
+              </div>
+              <div class="components__input-field">
+                <label class="input-text">
+                  <div class="input-text__wrapper">
+                    <input class="input-text__input" type="text" placeholder="Placeholder">
+                    <span class="input-text__icon"></span>
+                  </div>
+                  <span class="input__label">Label</span>
+                </label>
+                <label class="input-text input-text--success">
+                  <div class="input-text__wrapper">
+                    <input class="input-text__input" type="text" value="Success">
+                    <span class="input-text__icon"></span>
+                  </div>
+                  <span class="input__label">Success</span>
+                </label>
+                <label class="input-text input-text--error">
+                  <div class="input-text__wrapper">
+                    <input class="input-text__input" type="text" value="Error">
+                    <span class="input-text__icon"></span>
+                  </div>
+                  <span class="input__label">Error</span>
+                </label>
+                <label class="input-text">
+                  <div class="input-text__wrapper">
+                    <input class="input-text__input" type="text" value="Disabled" disabled>
+                    <span class="input-text__icon"></span>
+                  </div>
+                  <span class="input__label">Disabled</span>
+                </label>
+              </div>
+            </div>
+            <div class="components__code">
+              <div class="tabs">
+
+                <div class="tabs__scroller">
+                  <div class="container">
+                    <ul class="tabs__list tabs__list--components">
+                      <li class="tabs__item">
+                        <button class="tabs__button tabs__button--active" data-type-html>HTML</button>
+                      </li>
+                      <li class="tabs__item">
+                        <button class="tabs__button" data-type-css>CSS</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+
+                <div class="tabs__content tabs__content--html">
+                  <pre class="components__code-example">
+                    <code data-simplebar class="prettyprint">
+&lt;!-- Разметка Радио-кнопок --&gt;
+
+&lt;label class="radio"&gt;
+  &lt;input class="radio__input visually-hidden" type="radio" name="not" value="Default"&gt;
+  &lt;span class="radio__label"&gt;Default&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class="radio"&gt;
+  &lt;input class="radio__input visually-hidden" type="radio" name="not" value="Checked" checked&gt;
+  &lt;span class="radio__label"&gt;Checked&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class="radio"&gt;
+  &lt;input class="radio__input visually-hidden" type="radio" name="not" value="Disabled" disabled&gt;
+  &lt;span class="radio__label"&gt;Disabled&lt;/span&gt;
+&lt;/label&gt;
+
+
+&lt;!-- Разметка Чекбоксов --&gt;
+
+&lt;label class="checkbox"&gt;
+  &lt;input class="checkbox__input visually-hidden" type="checkbox" name="not"&gt;
+  &lt;span class="checkbox__label"&gt;Default&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class="checkbox"&gt;
+  &lt;input class="checkbox__input visually-hidden" type="checkbox" name="not" checked&gt;
+  &lt;span class="checkbox__label"&gt;Checked&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class="checkbox"&gt;
+  &lt;input class="checkbox__input visually-hidden" type="checkbox" name="not" disabled&gt;
+  &lt;span class="checkbox__label"&gt;Disabled&lt;/span&gt;
+&lt;/label&gt;
+
+
+&lt;!-- Разметка Переключателей --&gt;
+
+&lt;label class="toggler"&gt;
+  &lt;input class="toggler__input visually-hidden" type="checkbox" name="not"&gt;
+  &lt;span class="toggler__label"&gt;Off&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class="toggler"&gt;
+  &lt;input class="toggler__input visually-hidden" type="checkbox" name="not" checked&gt;
+  &lt;span class="toggler__label"&gt;On&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class="toggler"&gt;
+  &lt;input class="toggler__input visually-hidden" type="checkbox" name="not" disabled&gt;
+  &lt;span class="toggler__label"&gt;Disabled&lt;/span&gt;
+&lt;/label&gt;
+
+
+&lt;!-- Разметка Полей --&gt;
+
+&lt;label class="input-text"&gt;
+  &lt;div class="input-text__wrapper"&gt;
+    &lt;input class="input-text__input" type="text" placeholder="Placeholder"&gt;
+    &lt;span class="input-text__icon"&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;span class="input__label"&gt;Label&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class="input-text input-text--success"&gt;
+  &lt;div class="input-text__wrapper"&gt;
+    &lt;input class="input-text__input" type="text" value="Success"&gt;
+    &lt;span class="input-text__icon"&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;span class="input__label"&gt;Success&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class="input-text input-text--error"&gt;
+  &lt;div class="input-text__wrapper"&gt;
+    &lt;input class="input-text__input" type="text" value="Error"&gt;
+    &lt;span class="input-text__icon"&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;span class="input__label"&gt;Error&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class="input-text"&gt;
+  &lt;div class="input-text__wrapper"&gt;
+    &lt;input class="input-text__input" type="text" value="Disabled" disabled&gt;
+    &lt;span class="input-text__icon"&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;span class="input__label"&gt;Disabled&lt;/span&gt;
+&lt;/label&gt;
+                    </code>
+                  </pre>
+                </div>
+                <div class="tabs__content tabs__content--css">
+                  <pre class="components__code-example">
+                    <code data-simplebar class="prettyprint">
+/*Стилизация Чекбоксов*/
+
+.checkbox__label {
+  display: flex;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--radio-text-color);
+  user-select: none;
+}
+
+.checkbox__input:disabled + .checkbox__label {
+  color: var(--grey-2);
+}
+
+.checkbox__input:focus + .checkbox__label {
+  text-decoration: underline;
+}
+
+.checkbox__label::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-color: var(--white);
+  border: 1px solid var(--grey-2);
+  border-radius: 4px;
+  margin: 0 12px 0 0;
+}
+
+.checkbox__input:checked + .checkbox__label::before {
+  background-color: var(--blue);
+  border-color: var(--blue);
+  background-image: url('../assets/images/checkbox.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-name: pulse;
+  animation-duration: 0.4s;
+}
+
+@keyframes pulse {
+  0% {
+      box-shadow: 0 0 0 0;
+  }
+  100% {
+      box-shadow: 0 0 0 15px rgba(189, 195, 199, 0);
+  }
+}
+
+.checkbox__input:disabled + .checkbox__label::before {
+  background-color: var(--grey-2);
+  border-color: var(--grey-2);
+}
+
+
+/*Стилизация Полей*/
+
+.input-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+}
+
+.input-text__wrapper {
+  position: relative;
+}
+
+.input-text__input {
+  width: 100%;
+  padding: 17px 64px 17px 24px;
+  background-color: transparent;
+  border: 1px solid var(--secondary-border-color);
+  border-radius: 8px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--input-text-color);
+  transition-duration: 0.6s;
+}
+
+.input-text__input::placeholder {
+  color: var(--grey-2);
+}
+
+.input-text--error .input-text__input {
+  border-color: var(--red);
+  box-shadow: 0px 1px 1px var(--box-shadow-1);
+}
+
+.input-text__input:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0px 1px 1px var(--box-shadow-2);
+}
+
+.input-text__input:disabled {
+  background-color: var(--grey-2);
+  border-color: var(--grey-2);
+  color: var(--grey-3);
+}
+
+.input__label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+
+.input-text__icon {
+  display: none;
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-text--success .input-text__icon,
+.input-text--error .input-text__icon {
+  display: block;
+}
+
+.input-text__input:disabled + .input-text__icon {
+  display: none;
+}
+
+.input-text__icon::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.input-text--success .input-text__icon::before {
+  background-image: url("../../assets/images/check-circle.svg");
+}
+
+.input-text--error .input-text__icon::before {
+  background-image: url("../../assets/images/alert-triangle.svg");
+}
+
+
+/*Стилизация Переключателей*/
+
+.toggler {
+  cursor: pointer;
+}
+
+.toggler__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--radio-text-color);
+  user-select: none;
+}
+
+.toggler__input:disabled + .toggler__label {
+  color: var(--grey-2);
+}
+
+.toggler__input:focus + .toggler__label {
+  text-decoration: underline;
+}
+
+.toggler__label::before {
+  content: "";
+  display: block;
+  width: 52px;
+  height: 28px;
+  background-color: var(--white);
+  border: 1px solid var(--grey-2);
+  border-radius: 16px;
+  transition-duration: 0.3s;
+}
+
+.toggler--theme .toggler__label::before {
+  margin: 0;
+}
+
+.toggler__input:checked + .toggler__label::before {
+  background: var(--blue);
+  border-color: var(--blue);
+}
+
+.toggler__input:disabled + .toggler__label::before {
+  background-color: var(--grey-2);
+  border-color: var(--grey-2);
+}
+
+.toggler__label::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  width: 24px;
+  height: 24px;
+  background-color: var(--grey-2);
+  border-radius: 50%;
+  transition-duration: 0.4s;
+}
+
+.toggler__input:checked + .toggler__label::after {
+  background-color: var(--white);
+  transform: translateX(24px);
+}
+
+.toggler__input:disabled + .toggler__label::after {
+  background-color: var(--grey-3);
+  opacity: 0.25;
+}
+
+
+/*Стилизация Радио-кнопок*/
+
+.radio__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--radio-text-color);
+  user-select: none;
+}
+
+.radio__input:disabled + .radio__label {
+  color: var(--grey-2);
+}
+
+.radio__input:focus + .radio__label {
+  text-decoration: underline;
+}
+
+.radio__label::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-color: var(--white);
+  border: 1px solid var(--grey-2);
+  border-radius: 50%;
+  margin: 0 12px 0 0;
+}
+
+.radio__input:checked + .radio__label::before {
+  border-color: var(--blue);
+}
+
+.radio__input:checked + .radio__label::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--blue);
+}
+
+.radio__input:disabled + .radio__label::before {
+  background-color: var(--grey-2);
+  border-color: var(--grey-2);
+}
+                    </code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer-components">
+    <div class="container">
+      <p class="footer-components__title">
+        Reusable component library
+      </p>
+    </div>
+  </footer>
+  <script type="module" src="../js/main.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.8/simplebar.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</body>
+
+</html>

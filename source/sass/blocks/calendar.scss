@@ -1,0 +1,133 @@
+.calendar {
+  width: 100%;
+  min-width: 270px;
+
+  padding-top: 28px;
+  padding-right: 32px;
+  padding-bottom: 26px;
+  padding-left: 32px;
+
+  border: 1px solid var(--rare-border-color);
+  border-radius: 8px;
+}
+
+
+.calendar--component {
+  max-width: 400px;
+}
+
+
+.calendar--previev {
+  max-width: 300px;
+
+  pointer-events: none;
+
+  @media (max-width: 400px) {
+    min-width: 140px;
+    max-width: 180px;
+
+    padding-top: 14px;
+    padding-right: 13px;
+    padding-bottom: 16px;
+    padding-left: 13px;
+  }
+}
+
+
+.calendar__title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--calendar-text-color);
+  text-align: center;
+
+  margin-bottom: 24px;
+}
+
+
+.calendar--previev .calendar__title {
+  @media (max-width: 400px) {
+    font-size: 10px;
+    line-height: 12px;
+
+    margin-bottom: 12px;
+  }
+}
+
+
+.calendar__wrapper {
+  position: relative;
+
+  padding-bottom: 85.71%;
+}
+
+
+.clendar__inner {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+.calendar__item {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--calendar-text-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.calendar--previev .calendar__item {
+  @media (max-width: 400px) {
+    font-size: 8px;
+    line-height: 10px;
+  }
+}
+
+
+.calendar__item--day {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--grey-5);
+
+  align-items: flex-start;
+}
+
+
+.calendar--previev .calendar__item--day {
+  @media (max-width: 400px) {
+    font-size: 7px;
+    line-height: 10px;
+  }
+}
+
+
+.calendar__item--target {
+  color: var(--white);
+
+  background-color: var(--blue);
+}
+
+
+.calendar__item--interval {
+  color: var(--calebdar-interval-text-color);
+
+  background-color: var(--calebdar-interval-bg);
+}
+
+

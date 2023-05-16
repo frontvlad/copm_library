@@ -1,0 +1,130 @@
+.header {
+  position: relative;
+  padding: 24px 0;
+  background-color: var(--main-bg);
+
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 16px 0;
+  }
+}
+
+.header--component {
+  background-color: var(--main-components-bg);
+}
+
+.header__img {
+  display: block;
+  width: 110px;
+  height: 32px; 
+}
+.header__icon {
+  display: block;
+  width: 110px;
+  height: 32px; 
+}
+
+@media (max-width: 600px) {
+  .header__icon {
+    margin: 0 auto;
+  }
+}
+
+.header__toggler-mobile-menu {
+  display: none;
+  position: absolute;
+  top: 25px;
+  border: none;
+  background-color: transparent;
+  z-index: 5;
+  width: 20px;
+  height: 14px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .header__toggler-mobile-menu {
+    display: block;
+  }
+}
+
+.header__toggler-mobile-menu .header__toggler-mobile-menu-icon,
+.header__toggler-mobile-menu::before,
+.header__toggler-mobile-menu::after {
+  left: 0;
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  transition: all 0.3s ease 0s;
+  background-color: var(--menu-toggler-color);
+}
+
+.header__toggler-mobile-menu::before,
+.header__toggler-mobile-menu::after {
+  content: "";
+}
+.header__toggler-mobile-menu::before {
+  top: 0;
+}
+.header__toggler-mobile-menu::after {
+  bottom: 0;
+}
+
+.header__toggler-mobile-menu .header__toggler-mobile-menu-icon {
+  top: 50%;
+  transform: scale(1) translate(0px, -50%);
+}
+
+.header__toggler-mobile-menu--active .header__toggler-mobile-menu-icon {
+  transform: scale(0) translate(0px, -50%);
+  background-color: var(--active-menu-toggler-color); 
+}
+.header__toggler-mobile-menu--active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0px, -50%);
+  background-color: var(--active-menu-toggler-color);
+}
+.header__toggler-mobile-menu--active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0px, 50%);
+  background-color: var(--active-menu-toggler-color);
+}
+
+
+
+
+
+.header__theme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 124px;
+}
+
+@media (max-width: 600px) {
+  .header__theme {
+    display: none;
+  }
+}
+
+.header__theme-icon--moon {
+  width: 20px;
+  height: 20px;
+  color:  var(--theme-togler-moon);
+}
+
+.header__theme-icon--sun {
+  width: 24px;
+  height: 24px;
+  color:  var(--theme-togler-sun);
+}
+
+

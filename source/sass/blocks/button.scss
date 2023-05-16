@@ -1,0 +1,87 @@
+.button {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  white-space: nowrap;
+
+  height: 48px;
+
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+
+  border: none;
+  border-radius: 8px;
+
+  transition-duration: 0.1s;
+}
+
+.button:active {
+  transform: translateY(4px);
+}
+
+.button--preview {
+  max-width: 250px;
+
+  pointer-events: none;
+
+  @media (max-width: 400px) {
+    font-size: 12px;
+    line-height: 15px;
+
+    height: auto;
+    max-width: 120px;
+
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+  }
+}
+
+.button--primary {
+  color: var(--button-text-color);
+
+  background-color: var(--primary);
+}
+
+.button--primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.button--secondary {
+  color: var(--button-text-color);
+
+  background-color: var(--secondary);
+}
+
+.button--secondary:hover {
+  background-color: var(--secondary-hover);
+}
+
+.button--alternate {
+  color: var(--main-text-color);
+
+  background-color: transparent;
+
+  border: 1px solid var(--rare-border-color);
+}
+
+.button--alternate:hover {
+  border-color: var(--main-border-color);
+}
+
+.button--disabled,
+.button:disabled {
+  opacity: 0.5;
+  
+  pointer-events: none;
+}
+
+
+

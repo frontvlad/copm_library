@@ -1,0 +1,89 @@
+<!DOCTYPE html><html class="page" lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="../css/style.min.css"><title>Skeleton</title></head><body class="content" data-components-page><header class="header header--component"><div class="container"><button class="header__toggler-mobile-menu"><span class="header__toggler-mobile-menu-icon"></span></button><div class="header__wrapper"><a class="header__icon" href="../index.html"><svg class="header__img"><use href="../assets/icons/sprite.svg#header-icon"></use></svg></a><div class="header__theme"><svg class="header__theme-icon header__theme-icon--sun"><use href="../assets/icons/sprite.svg#sun-icon"></use></svg> <label class="toggler toggler--theme"><input class="toggler__input visually-hidden js-theme" type="checkbox" name="theme-header"> <span class="toggler__label"><span class="visually-hidden">Dark mode</span></span></label> <svg class="header__theme-icon header__theme-icon--moon"><use href="../assets/icons/sprite.svg#moon-icon"></use></svg></div></div></div></header><main class="main-content"><section class="components"><div class="components__container container"><div class="components__inner"><nav class="context-menu context-menu--components"><div class="context-menu__block"><div class="context-menu__theme-toggler theme-toggler"><p class="theme-toggler__text">Dark mode</p><label class="toggler toggler--theme"><input class="toggler__input visually-hidden js-theme" type="checkbox" name="not"> <span class="toggler__label"><span class="visually-hidden">Dark mode</span></span></label></div></div><div class="context-menu__block"><p class="context-menu__title">Complex</p><ul class="context-menu__list"><li class="context-menu__item"><a href="./button.html" class="context-menu__link">Button</a></li><li class="context-menu__item"><a href="./tooltip.html" class="context-menu__link">Tooltip</a></li><li class="context-menu__item"><a href="./avatar.html" class="context-menu__link">Avatar</a></li><li class="context-menu__item"><a href="./form-elements.html" class="context-menu__link">Custom form elements</a></li></ul></div><div class="context-menu__block"><p class="context-menu__title">Simple</p><ul class="context-menu__list"><li class="context-menu__item"><a href="./skeleton.html" class="context-menu__link context-menu__link--active">Skeleton</a></li><li class="context-menu__item"><a href="./histogram.html" class="context-menu__link">Histogram</a></li><li class="context-menu__item"><a href="./calendar.html" class="context-menu__link">Calendar</a></li><li class="context-menu__item"><a href="./accordion.html" class="context-menu__link">Accordion</a></li><li class="context-menu__item context-menu__link--active"><a href="./modal.html" class="context-menu__link">Modal</a></li><li class="context-menu__item context-menu__item--main-page"><a href="../index.html" class="context-menu__link">Main page</a></li></ul></div></nav><div class="components__block"><h2 class="components__title">Skeleton</h2><div class="components__element"><div class="skeleton skeleton--component"><div class="skeleton__inner"><div class="skeleton__avatar"></div><div class="skeleton__info"><div class="skeleton__line skeleton__line--name"></div><div class="skeleton__line skeleton__line--subname"></div></div></div><div class="skeleton__line skeleton__line--text"></div><div class="skeleton__line skeleton__line--text"></div></div></div><div class="components__code"><div class="tabs"><div class="tabs__scroller"><div class="container"><ul class="tabs__list tabs__list--components"><li class="tabs__item"><button class="tabs__button tabs__button--active" data-type-html>HTML</button></li><li class="tabs__item"><button class="tabs__button" data-type-css>CSS</button></li></ul></div></div><div class="tabs__content tabs__content--html"><pre class="components__code-example">
+                    <code data-simplebar class="prettyprint">
+&lt;div class="skeleton"&gt;
+  &lt;div class="skeleton__inner"&gt;
+    &lt;div class="skeleton__avatar"&gt;
+    &lt;/div&gt;
+    &lt;div class="skeleton__info"&gt;
+      &lt;div class="skeleton__line skeleton__line--name"&gt;&lt;/div&gt;
+      &lt;div class="skeleton__line skeleton__line--subname"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="skeleton__line skeleton__line--text"&gt;&lt;/div&gt;
+  &lt;div class="skeleton__line skeleton__line--text"&gt;&lt;/div&gt;
+&lt;/div&gt;
+                    </code>
+                  </pre></div><div class="tabs__content tabs__content--css"><pre class="components__code-example">
+                    <code data-simplebar class="prettyprint">
+.skeleton {
+  width: 100%;
+  padding: 24px 40px 32px 24px;
+  border: 1px solid var(--rare-border-color);
+  border-radius: 8px;
+}
+
+.skeleton--component {
+  max-width: 600px;
+}
+
+.skeleton__line {
+  height: 20px;
+}
+
+.skeleton__inner {
+  width: 66%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.skeleton__avatar {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  margin-right: 16px;
+  border-radius: 50%;
+  background-color: var(--grey-2);
+  background-image: var(--grey-gradient);
+}
+
+.skeleton__line,
+.skeleton__avatar {
+  background-color: var(--grey-2);
+  background-image: var(--grey-gradient);
+  background-size: 200%;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: gradient;
+  animation-timing-function: linear;
+}
+
+@keyframes gradient {
+  to {
+      background-position: 200%;
+  }
+}
+
+.skeleton__info {
+  width: 77%;
+}
+
+.skeleton__line--name {
+  width: 67%;
+  margin-bottom: 8px;
+}
+
+.skeleton__line--subname {
+  width: 100%;
+}
+
+.skeleton__line--text {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.skeleton__line--text:last-child {
+  margin-bottom: 0;
+}
+                    </code>
+                  </pre></div></div></div></div></div></div></section></main><footer class="footer-components"><div class="container"><p class="footer-components__title">Reusable component library</p></div></footer><script type="module" src="../js/main.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.8/simplebar.min.js"></script><script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script></body></html>

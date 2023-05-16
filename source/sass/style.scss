@@ -1,0 +1,38 @@
+// Global
+
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
+@import "global/normalize.scss";
+
+//Blocks
+
+@import './blocks/header.scss';
+// @import './blocks/main-content.scss';
+@import './blocks/footer.scss';
+@import './blocks/footer-components.scss';
+@import './blocks/toggler.scss';
+@import './blocks/accordion.scss';
+@import './blocks/button.scss';
+@import './blocks/skeleton.scss';
+@import './blocks/tooltip.scss';
+@import './blocks/histogram.scss';
+@import './blocks/calendar.scss';
+@import './blocks/avatar.scss';
+@import './blocks/title.scss';
+@import './blocks/theme.scss';
+@import './blocks/components.scss';
+@import './blocks/preview.scss';
+@import './blocks/card.scss';
+@import './blocks/tabs.scss';
+@import './blocks/context-menu.scss';
+@import './blocks/checkbox.scss';
+@import './blocks/radio.scss';
+@import './blocks/input.scss';
+@import './blocks/modal.scss';
+
+
+
+//Plagins
+@import './plagins/simplebar.scss';
+@import './plagins/code.scss';

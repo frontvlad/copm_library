@@ -1,0 +1,22 @@
+.footer-components {
+  padding: 56px 0;
+  background-color: var(--main-components-bg);
+}
+
+@media (max-width: 600px) {
+  .footer-components {
+    display: none;
+  }  
+}
+
+.footer-components__title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--grey-3); 
+  text-align: center;
+}
