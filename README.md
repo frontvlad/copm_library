@@ -1,5 +1,5 @@
 # Библиотека компонентов
-Учебный демо-проект от HTML Academy профессионального онлайн‑курса «Курс по современной вёрстке».
+Учебный демо-проект от learn.javascript профессионального онлайн‑курса «Курс по современной вёрстке».
 [https://htmlacademy.ru/intensive/ecmascript](https://learn.javascript.ru/courses/htmlcss)
 
 Сертификат
